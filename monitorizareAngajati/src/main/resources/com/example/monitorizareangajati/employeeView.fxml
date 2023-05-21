@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="840.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.monitorizareangajati.Controllers.EmployeeController">
+    <children>
+        <TableView fx:id="tableViewSarcini" layoutY="21.0" prefHeight="200.0" prefWidth="441.0">
+            <columns>
+                <TableColumn fx:id="tableColumnStatut" prefWidth="103.99994200468063" text="Status" />
+                <TableColumn fx:id="tableColumnDescriere" prefWidth="336.80003356933594" text="Descriere" />
+            </columns>
+        </TableView>
+        <Button layoutX="708.0" layoutY="468.0" mnemonicParsing="false" onAction="#handleLogoutButton" prefHeight="40.0" prefWidth="105.0" text="Logout" />
+        <Button layoutX="-1.0" layoutY="227.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="442.0" text="Marcheaza sarcina ca indeplinita" />
+        <TableView layoutX="-1.0" layoutY="334.0" prefHeight="200.0" prefWidth="441.0">
+            <columns>
+                <TableColumn prefWidth="103.99994200468063" text="Subiect" />
+                <TableColumn prefWidth="336.80003356933594" text="Mesaj" />
+            </columns>
+        </TableView>
+        <DatePicker layoutX="620.0" layoutY="21.0" />
+        <DatePicker layoutX="618.0" layoutY="64.0" />
+        <TextField layoutX="618.0" layoutY="108.0" prefHeight="78.0" prefWidth="175.0" />
+      <Label alignment="CENTER" layoutX="475.0" layoutY="20.0" prefHeight="26.0" prefWidth="130.0" text="Data inceput" />
+      <Label alignment="CENTER" layoutX="475.0" layoutY="63.0" prefHeight="26.0" prefWidth="130.0" text="Data sfarsit" />
+      <Label alignment="CENTER" layoutX="475.0" layoutY="108.0" prefHeight="26.0" prefWidth="130.0" text="Motiv" />
+      <Button layoutX="499.0" layoutY="200.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="296.0" text="Trimite cererea de concediu" />
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="307.0" prefHeight="26.0" prefWidth="442.0" text="Anunțuri">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="-1.0" prefHeight="26.0" prefWidth="442.0" text="Sarcini">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
